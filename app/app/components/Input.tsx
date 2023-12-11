@@ -45,8 +45,8 @@ const Input = () => {
         Submit
       </button>
       <p className="mt-4">
-        Age is {age.years} years, {age.months} months, {age.days} days,{" "}, {age.hour} hours,
-        {age.minutes} minutes, and {age.seconds} seconds.
+        Age is {age.years} years, {age.months} months, {age.days} days{" "}, {age.hour} hours,
+         {age.minutes} minutes, and {age.seconds} seconds.
       </p>
     </>
   )
