@@ -7,6 +7,7 @@ const Input = () => {
     years: 0,
     months: 0,
     days: 0,
+    hour: 0,
     minutes: 0,
     seconds: 0,
   });
@@ -20,12 +21,14 @@ const Input = () => {
     const years = ageDate.getUTCFullYear() - 1970;
     const months = ageDate.getUTCMonth();
     const days = ageDate.getUTCDate() - 1;
+    const hour = ageDate.getUTCHours();
     const minutes = ageDate.getUTCMinutes();
     const seconds = ageDate.getUTCSeconds();
 
     setAge({
       years,
       months,
+      hour,
       days,
       minutes,
       seconds,
@@ -42,7 +45,7 @@ const Input = () => {
         Submit
       </button>
       <p className="mt-4">
-        Age is {age.years} years, {age.months} months, {age.days} days,{" "}
+        Age is {age.years} years, {age.months} months, {age.days} days,{" "}, {age.hour} hours,
         {age.minutes} minutes, and {age.seconds} seconds.
       </p>
     </>
